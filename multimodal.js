@@ -19,7 +19,8 @@ async function run() {
   const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
 
   const prompt =
-    "esto es un ticket de consumicion en un restaurante, puedes decirme item por item, el precio de cada uno y cantidades?, luego devuelvemelo en un formato json que tu creas conveniente";
+    "esto es un ticket de consumicion en un restaurante, puedes decirme item por item, el precio de cada uno y cantidades?" +
+    "estamos en una reunion de amigos, somos 4, yo, santiago, ignacio y matias, y necesitamos dividir gastos, yo consumí, el iced green tea y la miso soup, santiago consumió el tofu y el chirashi, ignacio la ensalada y matias el hot green tea. Me podrías detallar cuanto debería pagar cada uno de ellos? en español por favor";
 
   const imageParts = [fileToGenerativePart("cuenta.jpg", "image/jpg")];
 
